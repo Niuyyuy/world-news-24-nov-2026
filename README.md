@@ -4,6 +4,10 @@
 [![repo](https://img.shields.io/badge/github-Niuyyuy%2Fworld--news--24--nov--2026-black)](https://github.com/Niuyyuy/world-news-24-nov-2026)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+[![make.fun](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/Niuyyuy/world-news-24-nov-2026/rank.svg)](https://make.fun/bounty/news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/Niuyyuy/world-news-24-nov-2026/reward.svg)](https://make.fun/bounty/news-image-20261124)
+
 A single dense front page that packs the whole of Tuesday 24 November
 2026 into one 1024×1024 image: **62 items** — 58 stories grouped into
 seven sections plus four extra briefs — every one of them checked
