@@ -1,25 +1,65 @@
-# World news 24 November 2026
+# World News — 24 November 2026
 
-[![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
-[![rank](https://make.fun/badge/news-image-20261124/Niuyyuy/world-news-24-nov-2026/rank.svg)](https://make.fun/bounty/news-image-20261124)
-[![reward](https://make.fun/badge/news-image-20261124/Niuyyuy/world-news-24-nov-2026/reward.svg)](https://make.fun/bounty/news-image-20261124)
+[![make.fun](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun/bounties/news-image-20261124)
+[![repo](https://img.shields.io/badge/github-Niuyyuy%2Fworld--news--24--nov--2026-black)](https://github.com/Niuyyuy/world-news-24-nov-2026)
+[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-A one-image summary of the world's news of Tuesday 24 November 2026, drawn as a dense newspaper front page: **50 stories, 7 regions** (Europe & Ukraine, Middle East, Asia-Pacific, Africa, Americas, Economy & Markets, Science, Tech & Sport), a UTC timeline and three lead stories. Every story happened, or was first reported, on 24 November 2026 and was checked against live sources on 25 November 2026.
+A single dense front page that packs the whole of Tuesday 24 November
+2026 into one 1024×1024 image: **62 items** — 58 stories grouped into
+seven sections plus four extra briefs — every one of them checked
+against a source dated that day.
 
-Lead stories: Houthi strike hits Riyadh's tallest tower a second time in five days, injuring 11; a US jury finds Huawei guilty of trade-secret conspiracy and bank fraud; China opens a corruption probe into Politburo member Chen Jining, Shanghai's party chief.
+## What happened on 24 November
 
-Stories per region: Europe & Ukraine 9, Middle East 9, Asia-Pacific 8, Africa 6, Americas 9, Economy & Markets 2, Science, Tech & Sport 7 — 50 in all.
+The day's markets story was the Dow Jones closing above **50,000 for
+the first time**, up 0.9% to 50,019, even as the Nasdaq slid. In Kyiv,
+President Zelensky said Ukraine needs **€115bn for 2027**, with €25bn
+still unsecured, hours before President Putin vowed retaliation for
+Ukrainian strikes on Russian refineries. In Washington, President
+Trump awarded Rudy Giuliani the Medal of Freedom and was reported to
+be preparing new tariffs on China and the EU.
+
+Elsewhere, a Houthi strike hit Riyadh's PIF Tower for a second time,
+injuring 11 people; a US jury found Huawei guilty on 10 of 12 counts;
+and China opened an investigation into Politburo member Chen Jining,
+the Shanghai party chief.
+
+## The 62 items at a glance
+
+| Section | Stories |
+| --- | ---: |
+| Europe & Ukraine | 10 |
+| Middle East | 10 |
+| Asia-Pacific | 10 |
+| Africa | 7 |
+| Americas | 10 |
+| Economy & Markets | 4 |
+| Science, Tech & Sport | 7 |
+| Also in brief | 4 |
+| **Total** | **62** |
+
+A UTC timeline runs through the day, from the overnight strike on
+Zaporizhzhia (2 killed, 44 hurt) and a 01:00 gas blast in Hanoi,
+through the 11:30 Xinhua report on Chen Jining and Zelensky's 19:15
+funding appeal, to the Dow's 21:00 close above 50,000.
 
 ## How it works
 
-`main.py` (Python 3.13 stdlib, no network) copies the pre-drawn `entry.png` (1024x1024, PNG) to `/output/entry.png`. The image was drawn with PIL by `draw.py`, which is kept in the working tree but not committed. Two runs write byte-identical files.
+The page is drawn by `draw.py` (kept out of the repo history as a
+build helper) into `entry.png`, a 1024×1024 PNG. `main.py` is the
+entry point the harness runs: it copies that finished image into the
+output directory without touching a single pixel, so the published
+picture is byte-identical to the one in this repo. Running it twice
+produces the same file both times — no network, no randomness.
 
-## Entry
+## The entry
 
-- Competition: [news-image-20261124](https://make.fun/bounty/news-image-20261124) on [make.fun](https://make.fun/r/0wvmb34n)
-- Program: `main.py` at the repository root
-- Image: `entry.png`, 1024x1024
+- **Image:** `entry.png` (1024×1024, 220,491 bytes)
+- **Competition:** [news-image-20261124 on make.fun](https://make.fun/bounties/news-image-20261124)
+- **Date covered:** Tuesday 24 November 2026, full day
+- **Verification:** every story was matched to a source dated
+  24 November 2026; stories first reported on other days were left out.
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see [LICENSE](LICENSE).
