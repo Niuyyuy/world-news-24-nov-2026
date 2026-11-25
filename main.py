@@ -1,9 +1,16 @@
+"""Copy the pre-rendered front page to the output directory.
+
+The image is drawn offline by draw.py; this program only places the
+finished PNG where the scorer expects it, with no network and no
+randomness, so every run writes the same bytes.
+"""
 import os
 import shutil
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-SRC = os.path.join(HERE, "entry.png")
-DST = os.path.join(OUT, "entry.png")
-os.makedirs(OUT, exist_ok=True)
-shutil.copyfile(SRC, DST)
+BASE = os.path.dirname(os.path.abspath(__file__))
+TARGET_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+SOURCE = os.path.join(BASE, "entry.png")
+TARGET = os.path.join(TARGET_DIR, "entry.png")
+
+os.makedirs(TARGET_DIR, exist_ok=True)
+shutil.copyfile(SOURCE, TARGET)
